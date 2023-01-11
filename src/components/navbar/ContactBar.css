@@ -1,0 +1,41 @@
+#contactbar {
+    height: 60px;
+    outline:1px;
+    background-color: #0747a1af;
+    color: whitesmoke !important;
+    padding-left:4% ;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px ;
+   
+  }
+  .Vcontact {
+    border-left: 1px solid white;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 19px;
+    padding-bottom: 10px;
+    margin-top:-16px;
+    
+  }
+  .pright {  
+    font-family: "Roboto", sans-serif;
+    color: whitesmoke; 
+    margin-left:32%;}
+
+    @media only screen and (max-width: 600px) {
+     #contactbar {
+    height: 60px;
+    outline:1px;
+    background-color: #0747a1af;
+    color: whitesmoke !important;
+    padding-left:4% ;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 12px ;
+    line-height: 1;
+   
+  }
+    }

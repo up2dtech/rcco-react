@@ -1,0 +1,62 @@
+.adh1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  /* color: #1065c0; */
+  color:aliceblue;
+  padding: 2%;
+}
+hr {
+  width: 20%;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #1a8ae5;
+}
+#advisory-section {
+  height:auto;
+  background-image: url("../../../assets/Images/bgadvisory.jpg");
+  background-repeat: no-repeat;
+  background-attachment:inherit;
+  background-color: #64b7f6;
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  color:aliceblue;
+  font-size: 20px;
+  padding: 1%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.list{
+  padding-left: 40px;
+  margin-top: 25px;
+  
+}
+
+ul>li{
+  text-decoration: none;
+}
+.list> ul > li > a{
+  text-decoration: none;  
+  color:aliceblue;
+  padding-top: 5px;
+  outline: none;
+  line-height: 1.5;
+  
+  
+}
+.list> ul > li > a:link{
+  text-decoration: none;
+}
+
+.list> ul > li > a:visited{
+  text-decoration: none;
+  outline: none;
+}
+
+.list> ul > li > a:hover{
+  color:#64b7f6;
+  font-size: 22;
+  cursor: pointer;
+  padding-left: 15px;
+  transition: all .52s ease;
+}
