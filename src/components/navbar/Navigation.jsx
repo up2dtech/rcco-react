@@ -1,4 +1,5 @@
 import "./Navigation.css";
+import image from "../../assets/images/full-logo.png";
 export default function Navigation() {
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
@@ -15,7 +16,7 @@ export default function Navigation() {
           {/* <!-- ===logo== --> */}
           <div className="">
             <a className="navbar-brand" href="#">
-              <img className="navimg" src="src\assets\Images\full-logo.png" />
+              <img className="navimg" src={image} />
             </a>
           </div>
           {/* <!-- ===navbar=== --> */}
@@ -29,14 +30,16 @@ export default function Navigation() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-               <span class="navbar-toggler-icon"><i className="fa fa-bars"></i></span>
+              <span className="navbar-toggler-icon">
+                <i className="fa fa-bars"></i>
+              </span>
             </button>
             {/* <!-- ===links=== --> */}
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-               <ul class="navbar-nav ml-auto">
+              <ul className="navbar-nav ml-auto">
                 <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}
@@ -101,26 +104,27 @@ export default function Navigation() {
                   </a>
                 </li>
                 <li className="navbar-item active">
-                <a
-              href="https://linkedin.com/company/riazchishtiandco"
-              className="nav-link mr-0"
-              target="_blank">            
-              <i className="fa fa-linkedin"></i>
-            </a>
-            </li>
-            <li className="navbar-item active">
-            <a
-              href="https://www.facebook.com/riazchishtiandco"
-              className="nav-link mr-1"
-              target="_blank"
-            >
-              <i className="fa fa-facebook"></i>
-            </a>
-            </li>
+                  <a
+                    href="https://linkedin.com/company/riazchishtiandco"
+                    className="nav-link mr-0"
+                    target="_blank"
+                  >
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li className="navbar-item active">
+                  <a
+                    href="https://www.facebook.com/riazchishtiandco"
+                    className="nav-link mr-1"
+                    target="_blank"
+                  >
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             {/* <!-- ====links====== --> */}
-          </div>         
+          </div>
         </nav>
       </div>
     </>

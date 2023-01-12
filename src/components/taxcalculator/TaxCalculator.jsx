@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Select from "react-select";
-import "./TaxCalculator.css"
+import "./TaxCalculator.css";
 
 // Select component options
 const options = [
@@ -102,140 +102,141 @@ export default function TaxCalculator() {
 
   return (
     <>
-    <div  className="TaxCalculator" id="calculate-tax-section">
-      <h3 className="text-center">Income Tax Calculator</h3>
-       {/* ===Form===      */}
-      <div className="inputStyles d-flex justify-content-around calculator">
-
+      <div className="TaxCalculator" id="calculate-tax-section">
+        <h3 className="text-center">Income Tax Calculator</h3>
+        {/* ===Form===      */}
+        <div className="inputStyles d-flex justify-content-around calculator">
           {/* ====Input=== */}
-        <div className="inputStylesRow d-flex flex-column align-items-center inputsec">
-          {/* ---Select field--- */}
-          <Select
-          className="select"
-             size="lg"
-            options={options}
-            onChange={(event) => {
-              if (
-                (event.value === "anual" || event.value === "rental") &&
-                state.taxType.value === "monthly" &&
-                state.anualIncome > 0
-              ) {
-                setState({
-                  ...state,
-                  taxType: event,
-                  anualIncome: state.anualIncome / 12,
-                  anualTax: 0,
-                });
-                return;
-              } else if (
-                event.value === "monthly" &&
-                (state.taxType.value === "anual" ||
-                  state.taxType.value === "rental") &&
-                state.anualIncome > 0
-              ) {
-                setState({
-                  ...state,
-                  taxType: event,
-                  anualIncome: state.anualIncome * 12,
-                  anualTax: 0,
-                });
-                return;
-              }
-              setState({ ...state, taxType: event, anualTax: 0 });
-            }}
-            value={state.taxType}
-          />&nbsp;
-          {/* ---Input field--- */}
-          <input  
-            className="input"
-            type="number"
-            size="lg" placeholder="Enter Income"
-            onChange={(event) => {
-              const value = parseInt(event.target.value.replace(/\D/g, ""));
-              if (state.taxType.value === "monthly") {
-                setState({
-                  ...state,
-                  anualIncome: value * 12,
-                  anualTax: 0,
-                });
-              } else {
-                setState({
-                  ...state,
-                  anualIncome: value,
-                  anualTax: 0,
-                });
-              }
-            }}
-          /> &nbsp;
-
-          {/* ----Button--- */}
-          <button
-            className="btn btn-success"
-            onClick={() => {
-              calculatePressed.current = true;
-              taxCalculation();
-            }}
-          >
-            Calculate
-          </button>
-        </div>
+          <div className="inputStylesRow d-flex flex-column align-items-center inputsec">
+            {/* ---Select field--- */}
+            <Select
+              className="select"
+              size="lg"
+              options={options}
+              onChange={(event) => {
+                if (
+                  (event.value === "anual" || event.value === "rental") &&
+                  state.taxType.value === "monthly" &&
+                  state.anualIncome > 0
+                ) {
+                  setState({
+                    ...state,
+                    taxType: event,
+                    anualIncome: state.anualIncome / 12,
+                    anualTax: 0,
+                  });
+                  return;
+                } else if (
+                  event.value === "monthly" &&
+                  (state.taxType.value === "anual" ||
+                    state.taxType.value === "rental") &&
+                  state.anualIncome > 0
+                ) {
+                  setState({
+                    ...state,
+                    taxType: event,
+                    anualIncome: state.anualIncome * 12,
+                    anualTax: 0,
+                  });
+                  return;
+                }
+                setState({ ...state, taxType: event, anualTax: 0 });
+              }}
+              value={state.taxType}
+            />
+            &nbsp;
+            {/* ---Input field--- */}
+            <input
+              className="input"
+              type="number"
+              size="lg"
+              placeholder="Enter Income"
+              onChange={(event) => {
+                const value = parseInt(event.target.value.replace(/\D/g, ""));
+                if (state.taxType.value === "monthly") {
+                  setState({
+                    ...state,
+                    anualIncome: value * 12,
+                    anualTax: 0,
+                  });
+                } else {
+                  setState({
+                    ...state,
+                    anualIncome: value,
+                    anualTax: 0,
+                  });
+                }
+              }}
+            />{" "}
+            &nbsp;
+            {/* ----Button--- */}
+            <button
+              className="btn btn-success"
+              onClick={() => {
+                calculatePressed.current = true;
+                taxCalculation();
+              }}
+            >
+              Calculate
+            </button>
+          </div>
           {/* ====end Input=== */}
-        {/* ====output=== */}
-        <div className="inputStyles  d-flex flex-col align-items-center">
-
-           {/* ----Monthly---- */}
-          <div className=" inputStyles d-flex flex-column mr-3">
-            <h5>Monthly</h5>
-             {/* ------- */}
-             <span>Income</span>
-             <div className="box">             
-              {(calculatePressed.current
-                ? Math.floor(state.anualIncome / 12)
-                : 0) || 0}
+          {/* ====output=== */}
+          <div className="inputStyles  d-flex flex-col align-items-center">
+            {/* ----Monthly---- */}
+            <div className=" inputStyles d-flex flex-column mr-3">
+              <h5>Monthly</h5>
+              {/* ------- */}
+              <span>Income</span>
+              <div className="box">
+                {(calculatePressed.current
+                  ? Math.floor(state.anualIncome / 12)
+                  : 0) || 0}
+              </div>
+              {/* ------- */}
+              <span>Tax</span>
+              <div className="box">
+                {(calculatePressed.current
+                  ? Math.floor(state.anualTax / 12)
+                  : 0) || 0}
+              </div>
+              {/* ------- */}
+              <span>Income After Tax </span>
+              <div className="box">
+                {(calculatePressed.current && state.anualIncome > 0
+                  ? Math.floor(state.anualIncome / 12 - state.anualTax / 12)
+                  : 0) || 0}
+              </div>
+              {/* ------- */}
             </div>
-             {/* ------- */}
-             <span>Tax</span>
-             <div className="box"> 
-              {(calculatePressed.current
-                ? Math.floor(state.anualTax / 12)
-                : 0) || 0}
-            </div>
-             {/* ------- */}
-             <span>Income After Tax </span>
-             <div className="box">              
-              {(calculatePressed.current && state.anualIncome > 0
-                ? Math.floor(state.anualIncome / 12 - state.anualTax / 12)
-                : 0) || 0}
-            </div>
-             {/* ------- */}
-            
-          </div>
             {/* ----Yearly output--- */}
-          <div className=" inputStyles d-flex flex-column">
-          <h5>Yearly</h5>
-             
-            {/* ------- */}
-            <span>Income</span>
-            <div className="box">              
-              {(calculatePressed.current ? Math.floor(state.anualIncome) : 0) ||
-                0}
+            <div className=" inputStyles d-flex flex-column">
+              <h5>Yearly</h5>
+
+              {/* ------- */}
+              <span>Income</span>
+              <div className="box">
+                {(calculatePressed.current
+                  ? Math.floor(state.anualIncome)
+                  : 0) || 0}
+              </div>
+              {/* ------- */}
+              <span>Tax</span>
+              <div className="box">
+                {(calculatePressed.current ? Math.floor(state.anualTax) : 0) ||
+                  0}
+              </div>
+              {/* ------- */}
+              <span>Income After Tax</span>
+              <div className="box">
+                {(calculatePressed.current && state.anualIncome > 0
+                  ? Math.floor(state.anualIncome - state.anualTax)
+                  : 0) || 0}
+              </div>
+              {/* ------- */}
             </div>
-             {/* ------- */}
-             <span>Tax</span>
-             <div className="box">             
-              {(calculatePressed.current ? Math.floor(state.anualTax) : 0) || 0}
-            </div>
-             {/* ------- */}
-             <span>Income After Tax</span>
-             <div className="box">              
-              {(calculatePressed.current && state.anualIncome > 0
-                ? Math.floor(state.anualIncome - state.anualTax)
-                : 0) || 0}
-            </div>
-             {/* ------- */}
           </div>
         </div>
-      </div>
       </div>
     </>
   );

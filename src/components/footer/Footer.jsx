@@ -8,37 +8,45 @@ export default function Footer() {
         data-aos-easing="ease-in-out"
         data-aos-duration="500"
       >
-        <div class="footer-top">
-          <div class="container">
+        <div className="footer-top">
+          <div className="container">
             <div className="row">
               {/* ----About---- */}
-              <div class="col-lg-3 col-md-6 col-sm-6 footer-info ">
+              <div className="col-lg-3 col-md-6 col-sm-6 footer-info ">
                 <h3>Riaz Chishti & Co</h3>
                 <p>
                   <i className="fa fa-clock"></i> &nbsp; 9:00 am - 5:00 pm
                 </p>
-                <div class="social-links mt-3">
-                  {/* <a href="#" class="twitter" title="twitter">
-                    <i class="fa fa-twitter"></i>
+                <div className="social-links mt-3">
+                  {/* <a href="#" className="twitter" title="twitter">
+                    <i className="fa fa-twitter"></i>
                   </a> */}
-                  <a href="https://www.facebook.com/riazchishtiandco" class="facebook"  target="_blank">
-                    <i class="fa fa-facebook"></i>
+                  <a
+                    href="https://www.facebook.com/riazchishtiandco"
+                    className="facebook"
+                    target="_blank"
+                  >
+                    <i className="fa fa-facebook"></i>
                   </a>
-                  <a href="#" class="instagram"  target="_blank">
-                    <i class="fa fa-instagram"></i>
+                  <a href="#" className="instagram" target="_blank">
+                    <i className="fa fa-instagram"></i>
                   </a>
-                  <a href="https://linkedin.com/company/riazchishtiandco" class="linkedin" target="_blank">
-                    <i class="fa fa-linkedin"></i>
+                  <a
+                    href="https://linkedin.com/company/riazchishtiandco"
+                    className="linkedin"
+                    target="_blank"
+                  >
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </div>
               </div>
 
               {/* ---useful links--- */}
-              <div class="col-lg-2 col-md-5 col-sm-6 footer-links ">
+              <div className="col-lg-2 col-md-5 col-sm-6 footer-links ">
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://fbr.gov.pk/"
                       title="Federal Board of Revenue"
@@ -49,7 +57,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://www.secp.gov.pk/"
                       title="Securities and Exchange Commission of Pakistan"
@@ -60,7 +68,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://e.pra.punjab.gov.pk/"
                       title="Punjab Revenue Authority"
@@ -71,7 +79,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://srb.gos.pk/"
                       title="Sindh Revenue Board"
@@ -82,7 +90,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://bra.gob.pk/"
                       title="Balochistan Revenue Authority"
@@ -93,7 +101,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a
                       href="https://kpra.gov.pk/"
                       title="Khyber Pakhtunkhwa Revenue Authority"
@@ -106,31 +114,31 @@ export default function Footer() {
                 </ul>
               </div>
               {/* ---service--- */}
-              <div class="col-lg-4 col-md-5 col-sm-6 footer-links ">
+              <div className="col-lg-4 col-md-5 col-sm-6 footer-links ">
                 <h4>Our Services</h4>
                 <ul>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Accounts & Book Keeping</a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Tax Advisory</a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Business Planning Outsourcing</a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Corporate Advisory</a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Business Planning & Investment Advisory</a>
                   </li>
                   <li>
-                    <i class="fa fa-chevron-right"></i>{" "}
+                    <i className="fa fa-chevron-right"></i>{" "}
                     <a href="#">Audit & Assurance</a>
                   </li>
                 </ul>
@@ -138,7 +146,7 @@ export default function Footer() {
 
               {/* ---contact-- */}
 
-              <div class="col-lg-3 col-md-6 col-sm-6 footer-contact">
+              <div className="col-lg-3 col-md-6 col-sm-6 footer-contact">
                 <h4>Contact Us</h4>
                 <p>
                   <i className="fa fa-phone"></i>&nbsp; 0321 4971186
@@ -146,8 +154,7 @@ export default function Footer() {
                   <i className="fa fa-envelope"></i>&nbsp; info@rcco.com.pk
                   <br />
                   <br />
-                  <i className="fa fa-location-dot"></i> &nbsp;
-                  68-A, Ali Block,
+                  <i className="fa fa-location-dot"></i> &nbsp; 68-A, Ali Block,
                   <br />
                   New Garden Town, Lahore
                   <br />
@@ -162,11 +169,15 @@ export default function Footer() {
           </div>
           {/* ==end footer top=== */}
         </div>
-        <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Rcco 2022</span></strong>. All Rights Reserved
-      </div>
-    </div>
+        <div className="container">
+          <div className="copyright">
+            &copy; Copyright{" "}
+            <strong>
+              <span>Rcco 2022</span>
+            </strong>
+            . All Rights Reserved
+          </div>
+        </div>
       </footer>
       {/* <!-- End Footer --> */}
     </>
