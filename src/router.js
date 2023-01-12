@@ -1,6 +1,6 @@
 import App from "./App";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App/>
