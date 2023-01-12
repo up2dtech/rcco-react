@@ -1,5 +1,5 @@
 import "./Navigation.css";
-import image from "../../assets/images/full-logo.png";
+import image from "../../assets/Images/full-logo.png";
 export default function Navigation() {
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);

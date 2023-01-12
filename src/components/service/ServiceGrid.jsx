@@ -1,11 +1,11 @@
 import Service from "./Service";
 import "./Service.css";
-import accountsImage from "../../assets/images/Accounts.jpg";
-import taxImage from "../../assets/images/tax1.jpg";
-import bpoImage from "../../assets/images/Bpo.jpg";
-import corporateImage from "../../assets/images/corporate.jpg";
-import planImage from "../../assets/images/Bplan.jpg";
-import auditImage from "../../assets/images/audit.jpg";
+import accountsImage from "../../assets/Images/Accounts.jpg";
+import taxImage from "../../assets/Images/tax1.jpg";
+import bpoImage from "../../assets/Images/Bpo.jpg";
+import corporateImage from "../../assets/Images/corporate.jpg";
+import planImage from "../../assets/Images/Bplan.jpg";
+import auditImage from "../../assets/Images/audit.jpg";
 
 export default function ServiceGrid() {
   return (

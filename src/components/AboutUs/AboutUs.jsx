@@ -1,6 +1,6 @@
 import "./AboutUs.css";
-import video from "../../assets/images/About.mp4";
-import image from "../../assets/images/full-logo.png";
+import video from "../../assets/Images/About.mp4";
+import image from "../../assets/Images/full-logo.png";
 export default function AboutUs() {
   return (
     <section
