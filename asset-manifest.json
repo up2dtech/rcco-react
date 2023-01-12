@@ -1,18 +1,24 @@
 {
   "files": {
     "main.css": "/rcco-react/static/css/main.77db9ac8.css",
-    "main.js": "/rcco-react/static/js/main.1c45cc54.js",
+    "main.js": "/rcco-react/static/js/main.c6dbaf97.js",
     "static/js/787.87154be3.chunk.js": "/rcco-react/static/js/787.87154be3.chunk.js",
+    "static/media/About.mp4": "/rcco-react/static/media/About.5e57e11e196c72216b6f.mp4",
+    "static/media/tax1.jpg": "/rcco-react/static/media/tax1.e7339d93d7a10484df52.jpg",
+    "static/media/full-logo.png": "/rcco-react/static/media/full-logo.69deb0269437f748c7e8.png",
+    "static/media/audit.jpg": "/rcco-react/static/media/audit.6dfbeae9090cc95077e8.jpg",
     "static/media/logo.png": "/rcco-react/static/media/logo.fb5a17b63bed01a0559d.png",
     "static/media/bgadvisory.jpg": "/rcco-react/static/media/bgadvisory.f8a45c100288142f99bd.jpg",
+    "static/media/Bpo.jpg": "/rcco-react/static/media/Bpo.447963404169753257c7.jpg",
+    "static/media/corporate.jpg": "/rcco-react/static/media/corporate.ddf141339f2b4ebadeb9.jpg",
     "static/media/bg-advisory.jpg": "/rcco-react/static/media/bg-advisory.4b90f8f6d44d96263997.jpg",
     "index.html": "/rcco-react/index.html",
     "main.77db9ac8.css.map": "/rcco-react/static/css/main.77db9ac8.css.map",
-    "main.1c45cc54.js.map": "/rcco-react/static/js/main.1c45cc54.js.map",
+    "main.c6dbaf97.js.map": "/rcco-react/static/js/main.c6dbaf97.js.map",
     "787.87154be3.chunk.js.map": "/rcco-react/static/js/787.87154be3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77db9ac8.css",
-    "static/js/main.1c45cc54.js"
+    "static/js/main.c6dbaf97.js"
   ]
 }
