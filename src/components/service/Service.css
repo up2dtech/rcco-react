@@ -4,6 +4,7 @@ h1 {
   color: #1065c0;
   padding: 2%;
 }
+
 hr {
   width: 20%;
   margin-bottom: 1rem;
@@ -21,7 +22,7 @@ hr {
   font-size: 18px;
   font-weight: 600;
 }
-p{
+p {
   font-family: "Roboto", sans-serif;
   /* font-weight: 600; */
 }
@@ -38,7 +39,7 @@ p{
   height: 158px;
   width: 158px;
 }
-.service>img:hover {
+.service > img:hover {
   height: 180px;
   width: 180px;
 }
