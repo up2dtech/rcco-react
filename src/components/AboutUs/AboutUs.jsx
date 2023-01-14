@@ -1,6 +1,8 @@
 import "./AboutUs.css";
 import video from "../../assets/Images/About.mp4";
-import image from "../../assets/Images/full-logo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLightbulb, faStar } from '@fortawesome/free-solid-svg-icons'
+
 export default function AboutUs() {
   return (
     <section
@@ -19,15 +21,6 @@ export default function AboutUs() {
           <hr></hr>
           <div className="row">
             <div className="col-lg-6 video-box venobox">
-              {/* <img
-              src={image}
-              className="img-fluid"
-              alt=""
-            /> */}
-              {/* <a href={video} target="_blank" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" ></a> */}
-              {/* <video width="500" height="500" controls>
-              <source src={video} type="video/mp4" />
-            </video> */}
               <iframe
                 src={video}
                 height="350px"
@@ -42,8 +35,7 @@ export default function AboutUs() {
             <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
               <div className="icon-box">
                 <div className="icon">
-                  {/* <i className="fa fa-fingerprint"></i> */}
-                  <i className="fa fa-lightbulb"></i>
+                  <FontAwesomeIcon icon={faLightbulb} className="fa-2x" />
                 </div>
                 <h4 className="title">
                   <a href="">Our Vision</a>
@@ -56,7 +48,7 @@ export default function AboutUs() {
 
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa fa-star"></i>
+                  <FontAwesomeIcon icon={faStar} className="fa-2x" />
                 </div>
                 <h4 className="title">
                   <a href="">OUR Values</a>
