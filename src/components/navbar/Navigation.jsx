@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
 import "./Navigation.css";
 import image from "../../assets/Images/full-logo.png";
 export default function Navigation() {
@@ -31,7 +35,7 @@ export default function Navigation() {
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon">
-                <i className="fa fa-bars"></i>
+                <FontAwesomeIcon icon={faBars}/>
               </span>
             </button>
             {/* <!-- ===links=== --> */}
