@@ -9,9 +9,13 @@
   margin-bottom: 20px;
   overflow: hidden;
 }
+.img-fluid{
+  height: 250px;
+  width: auto;
+}
 
 .team .member .member-img {
-  position: relative;
+  position:relative;
   overflow: hidden;
 }
 

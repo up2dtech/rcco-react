@@ -5,20 +5,18 @@
 }
 
 .navimg {
-    /* border-radius: 70%; */
     height: 75px;
-    width: 75px;
-    margin-top: -38px;
-    margin-left:40px;
+    width: 75px;  
+    margin-left:70px;
     margin-right: 0px;
-    /* background-color: aliceblue; */
-    position: fixed;
-    float: left;
+  
+  
     
 }
 .textsec{
   padding-top: 10px;
-  margin-left: -10px;
+  margin-left: -280px;
+  text-align: left;
  
 }
 .logotext{
@@ -68,20 +66,16 @@
       /* background-color: #64b7f6; */
   }
   .navimg {
-      /* border-radius: 70%; */
       height: 80px;
       width: 80px;
-      margin-top: -45px;
+      margin-top:0px;
       margin-left:10px;
-      /* background-color: aliceblue; */
-      position: fixed;
-      float: left;
-      
+    
   }
   .textsec{
       padding-top: 10px;
       margin-left: 0px;
-      /* visibility:hidden; */
+      visibility:hidden;
   }
   
  

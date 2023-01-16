@@ -1,6 +1,6 @@
 #footer {
   background: #0747a1af;
-  padding: 0 0 30px 0;
+  padding: 0 0 15px 0;
   color: #fff;
   font-size: 16px;
   background-image: url("../../assets/Images/logo.png");
@@ -80,16 +80,17 @@
   margin: 0;
 }
 
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  padding-top: 2px;
+ #footer .footer-top .footer-links ul .icon {
+  /* padding-right: 2px;
+  padding-top: 2px; */
   color: #64b7f6;
-  font-size: 8px;
-  line-height: 1;
+  font-size: 14px;
+  /* line-height:;  */
 }
+  
 
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 2px 0;
   display: flex;
   align-items: center;
 }
@@ -102,7 +103,7 @@
   color: #fff;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1px;
+  /* line-height: 1px; */
   text-decoration: none;
 }
 
@@ -128,23 +129,15 @@
   padding-top: 10px;
 }
 
-.textsec{
-  padding-top: 10px;
-  margin-left: -10px;
- 
-}
-.logotext{
+
+#footer .logotext{
   color:aliceblue;
   font-weight:bold;
   font-size: larger;
   text-shadow: 3pt cyan;
   text-transform: uppercase;
 }
-.logop{
-  color:#64b7f6;
-  font-size: small;
-  /* text-align: center; */
-}
+
 
 /* #footer .credits {
     padding-top: 10px;

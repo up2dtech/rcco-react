@@ -112,7 +112,7 @@ export default function Navigation() {
              
                 <li className="navbar-item active">
                   <a
-                    className="nav-link mr-5"
+                    className="nav-link mr-2"
                     style={{ cursor: "pointer" }}
                     onClick={() => handleClickScroll("advisory-section")}
                   >

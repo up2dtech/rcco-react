@@ -1,4 +1,12 @@
 import "./Team.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import TeamImg1 from "../../assets/Images/riaz.jpeg";
+import TeamImg2 from "../../assets/Images/Umer.jpeg";
+import TeamImg3 from "../../assets/Images/asif.jpeg";
+import TeamImg4 from "../../assets/Images/mehwish.jpg";
+import TeamImg5 from "../../assets/Images/ruhan.jpeg";
+import TeamImg6 from "../../assets/Images/bob.png";
 
 export default function Team() {
   return (
@@ -15,16 +23,12 @@ export default function Team() {
       <div className="container">
          {/* ====Row1==== */}
         <div className="row">    
-             <div className="col-lg-1"></div>
+             
           {/* ======== */}
-          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
-              <div className="member-img">
-                <img
-                  src="./assets/Images/teamuser.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
+              <div className="member-img">    
+                <img className="img-fluid" src={TeamImg1}  alt="Riaz"/>
               </div>
               <div className="member-info">
                 <h5>RIAZ AHMED CHISHTI</h5>
@@ -33,29 +37,25 @@ export default function Team() {
               </div>
               <div className="social">
                 <a href="">
-                  <i className="fa fa-twitter"></i>
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-facebook"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a href="">
-                  <i className="fa fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-linkedin"></i>
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
                 </a>
               </div>
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
-                <img
-                  src="..\..\images\teamuser.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
+              <img className="img-fluid" src={TeamImg2}  alt="Umer"/>
               </div>
               <div className="member-info">
                 <h5>MUHAMMAD UMER RIAZ</h5>
@@ -64,29 +64,25 @@ export default function Team() {
               </div>
               <div className="social">
                 <a href="">
-                  <i className="fa fa-twitter"></i>
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-facebook"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a href="">
-                  <i className="fa fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-linkedin"></i>
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
                 </a>
               </div>
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
-                <img
-                  src="../../assets/Images/Accounts.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
+              <img className="img-fluid" src={TeamImg3}  alt="Asif"/>
               </div>
               <div className="member-info">
                 <h5>DR. ASIF CHISHTI</h5>
@@ -98,16 +94,16 @@ export default function Team() {
               </div>
               <div className="social">
                 <a href="">
-                  <i className="fa fa-twitter"></i>
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-facebook"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a href="">
-                  <i className="fa fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
                 </a>
                 <a href="">
-                  <i className="fa fa-linkedin"></i>
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
                 </a>
               </div>
             </div>
@@ -118,61 +114,85 @@ export default function Team() {
        
           {/* ====2nd row=== */}
           <div class="row">
-          <div className="col-lg-1"></div>
-     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          
+     <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
-            <img src="src\assets\Images\femaleteam.jpg" class="img-fluid" alt=""/>
+          <img className="img-fluid" src={TeamImg4}  alt="Mehwish"/>
            </div>
           <div class="member-info">
             <h5>MEHVISH MASOUD</h5>
             <span>MANAGER AUDIT & ASSURANCE</span>
             <p>CA(finalist), Bsc</p>
           </div>
-          <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-instagram"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+          <div className="social">
+                <a href="">
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
+                </a>
+              </div>
         </div>
       </div>
         {/* ======== */}
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
-            <img src="src\assets\Images\teamuser.jpg" class="img-fluid" alt=""/>
+          <img className="img-fluid" src={TeamImg5}  alt="Ruhan"/>
           </div>
           <div class="member-info">
             <h5>MUHAMMAD RUHAN AFZAL</h5>
             <span>SPECIALIST LEGAL & COPORATE AFFAIRS</span>
             <p>Advocate High Court</p>
           </div>
-          <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-instagram"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+          <div className="social">
+                <a href="">
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
+                </a>
+              </div>
         </div>
       </div>
       {/* ======== */}
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
-            <img src="src\assets\Images\teamuser.jpg" class="img-fluid" alt=""/>
+          <img className="img-fluid" src={TeamImg6}  alt="Abbas"/>
           </div>
           <div class="member-info">
-            <h5>MUHAMMAD RUHAN AFZAL</h5>
-            <span>SPECIALIST LEGAL & COPORATE AFFAIRS</span>
+            <h5>MUHAMMAD ABBAS HAIDER</h5>
+            <span>TAX & COPORATE TEAM</span>
             <p>Advocate High Court</p>
           </div>
-          <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-instagram"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+          <div className="social">
+                <a href="">
+                <FontAwesomeIcon icon={faTwitter} className="fa-1x" />
+                </a>
+                <a href="">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faInstagram} className="fa-1x" />
+                </a>
+                <a href="">
+                <FontAwesomeIcon icon={faLinkedin} className="fa-1x" />
+                </a>
+              </div>
         </div>
       </div>
       </div>  

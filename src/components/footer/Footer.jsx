@@ -1,3 +1,6 @@
+import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faChevronRight, faClock, faEnvelope, faLocationDot, faMobileAndroid, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Footer.css";
 export default function Footer() {
   return (
@@ -14,12 +17,12 @@ export default function Footer() {
               {/* ----About---- */}
               <div className="col-lg-3 col-md-6 col-sm-6 footer-info ">
 
-              <div className="textsec">
+              <div className="">
                <span className="logotext">Riaz Chishti & Co</span>
                 {/* <p className="logop">Audit - Accounts - Tax</p> */}
                 </div>
                 <p className="infop ">
-                  <i className="fa fa-clock"></i> &nbsp; 9:00 am - 5:00 pm
+                  <FontAwesomeIcon icon={faClock} /> &nbsp; 9:00 am - 5:00 pm
                 </p>
                 <div className="social-links mt-3">
                   {/* <a href="#" className="twitter" title="twitter">
@@ -30,17 +33,17 @@ export default function Footer() {
                     className="facebook"
                     target="_blank"
                   >
-                    <i className="fa fa-facebook"></i>
+                   <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                   <a href="#" className="instagram" target="_blank">
-                    <i className="fa fa-instagram"></i>
+                  <FontAwesomeIcon icon={faInstagram} />
                   </a>
                   <a
                     href="https://linkedin.com/company/riazchishtiandco"
                     className="linkedin"
                     target="_blank"
                   >
-                    <i className="fa fa-linkedin"></i>
+                    <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
                 </div>
               </div>
@@ -50,7 +53,7 @@ export default function Footer() {
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a
                       href="https://fbr.gov.pk/"
                       title="Federal Board of Revenue"
@@ -61,7 +64,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a
                       href="https://www.secp.gov.pk/"
                       title="Securities and Exchange Commission of Pakistan"
@@ -72,7 +75,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
                     <a
                       href="https://e.pra.punjab.gov.pk/"
                       title="Punjab Revenue Authority"
@@ -83,7 +86,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://srb.gos.pk/"
                       title="Sindh Revenue Board"
@@ -94,7 +97,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://bra.gob.pk/"
                       title="Balochistan Revenue Authority"
@@ -105,7 +108,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://kpra.gov.pk/"
                       title="Khyber Pakhtunkhwa Revenue Authority"
@@ -122,27 +125,27 @@ export default function Footer() {
                 <h4>Our Services</h4>
                 <ul>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
                     <a href="#">Accounts & Book Keeping</a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
                     <a href="#">Tax Advisory</a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a href="#">Business Planning Outsourcing</a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a href="#">Corporate Advisory</a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a href="#">Business Planning & Investment Advisory</a>
                   </li>
                   <li>
-                    <i className="fa fa-chevron-right"></i>{" "}
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
                     <a href="#">Audit & Assurance</a>
                   </li>
                 </ul>
@@ -153,12 +156,13 @@ export default function Footer() {
               <div className="col-lg-3 col-md-6 col-sm-6 footer-contact">
                 <h4>Contact Us</h4>
                 <p>
-                  <i className="fa fa-phone"></i>&nbsp; 0321 4971186
+                <FontAwesomeIcon icon={faMobileAndroid} /> &nbsp; 0321 4971186                 
                   <br />
-                  <i className="fa fa-envelope"></i>&nbsp; info@rcco.com.pk
+                  <FontAwesomeIcon icon={faPhone} /> &nbsp; 042 38938695
                   <br />
+                  <FontAwesomeIcon icon={faEnvelope} /> &nbsp; info@rcco.com.pk
                   <br />
-                  <i className="fa fa-location-dot"></i> &nbsp; 68-A, Ali Block,
+                  <FontAwesomeIcon icon={faLocationDot} /> &nbsp; 68-A, Ali Block,
                   <br />
                   New Garden Town, Lahore
                   <br />
