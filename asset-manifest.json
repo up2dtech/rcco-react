@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f83ad13.css",
-    "main.js": "/static/js/main.ccb70ac6.js",
+    "main.css": "/static/css/main.0d291671.css",
+    "main.js": "/static/js/main.807f0b18.js",
     "static/js/787.87154be3.chunk.js": "/static/js/787.87154be3.chunk.js",
     "static/media/About.mp4": "/static/media/About.5e57e11e196c72216b6f.mp4",
     "static/media/introbg1.jpg": "/static/media/introbg1.ccf1244caf01db389932.jpg",
+    "static/media/bob.png": "/static/media/bob.c13e90a69913be7508b2.png",
+    "static/media/mehwish.jpg": "/static/media/mehwish.28fcdfe808d3b9f86e71.jpg",
     "static/media/tax1.jpg": "/static/media/tax1.e7339d93d7a10484df52.jpg",
+    "static/media/asif.jpeg": "/static/media/asif.185e86f6ecfadf6bbe4d.jpeg",
     "static/media/audit.jpg": "/static/media/audit.6dfbeae9090cc95077e8.jpg",
+    "static/media/riaz.jpeg": "/static/media/riaz.2c8860704c5a22a491b1.jpeg",
     "static/media/logo.png": "/static/media/logo.fb5a17b63bed01a0559d.png",
+    "static/media/ruhan.jpeg": "/static/media/ruhan.54ef3f0f1f7df1c16370.jpeg",
+    "static/media/Umer.jpeg": "/static/media/Umer.f59b5d144d3b604d07ba.jpeg",
     "static/media/bgadvisory.jpg": "/static/media/bgadvisory.f8a45c100288142f99bd.jpg",
     "static/media/Bpo.jpg": "/static/media/Bpo.447963404169753257c7.jpg",
     "static/media/corporate.jpg": "/static/media/corporate.ddf141339f2b4ebadeb9.jpg",
     "static/media/bg-advisory.jpg": "/static/media/bg-advisory.4b90f8f6d44d96263997.jpg",
     "index.html": "/index.html",
-    "main.6f83ad13.css.map": "/static/css/main.6f83ad13.css.map",
-    "main.ccb70ac6.js.map": "/static/js/main.ccb70ac6.js.map",
+    "main.0d291671.css.map": "/static/css/main.0d291671.css.map",
+    "main.807f0b18.js.map": "/static/js/main.807f0b18.js.map",
     "787.87154be3.chunk.js.map": "/static/js/787.87154be3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f83ad13.css",
-    "static/js/main.ccb70ac6.js"
+    "static/css/main.0d291671.css",
+    "static/js/main.807f0b18.js"
   ]
 }
