@@ -33,7 +33,7 @@
   font-weight: 600;
 }
 
-#footer .footer-top .footer-info p {
+#footer .footer-top .footer-info .infop {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
@@ -126,6 +126,24 @@
 #footer .copyright {
   text-align: center;
   padding-top: 10px;
+}
+
+.textsec{
+  padding-top: 10px;
+  margin-left: -10px;
+ 
+}
+.logotext{
+  color:aliceblue;
+  font-weight:bold;
+  font-size: larger;
+  text-shadow: 3pt cyan;
+  text-transform: uppercase;
+}
+.logop{
+  color:#64b7f6;
+  font-size: small;
+  /* text-align: center; */
 }
 
 /* #footer .credits {

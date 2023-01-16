@@ -13,15 +13,15 @@ export default function Team() {
       <hr></hr>
       {/* =====Content==== */}
       <div className="container">
-        <div className="row">
+         {/* ====Row1==== */}
+        <div className="row">    
+             <div className="col-lg-1"></div>
           {/* ======== */}
-          <div className="col-lg-1"></div>
-          {/* ======== */}
-          <div className="col-lg-2 col-md-6 d-flex align-items-stretch tcol">
+          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
                 <img
-                  src="..\..\images\teamuser.jpg"
+                  src="./assets/Images/teamuser.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -48,7 +48,7 @@ export default function Team() {
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-2 col-md-6 d-flex align-items-stretch tcol">
+          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
                 <img
@@ -79,11 +79,11 @@ export default function Team() {
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-2 col-md-6 d-flex align-items-stretch tcol">
+          <div className="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
                 <img
-                  src="..\..\images\teamuser.jpg"
+                  src="../../assets/Images/Accounts.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -113,71 +113,70 @@ export default function Team() {
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-2 col-md-6 d-flex align-items-stretch tcol">
-            <div className="member">
-              <div className="member-img">
-                <img
-                  src="..\..\images\femaleteam.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="member-info">
-                <h5>MEHVISH MASOUD</h5>
-                <span>MANAGER AUDIT & ASSURANCE</span>
-                <p>CA(finalist), Bsc</p>
-              </div>
-              <div className="social">
-                <a href="">
-                  <i className="fa fa-twitter"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-facebook"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-instagram"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
           </div>
-          {/* ======== */}
-          <div className="col-lg-2 col-md-6 d-flex align-items-stretch tcol">
-            <div className="member">
-              <div className="member-img">
-                <img
-                  src="..\..\images\teamuser.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div className="member-info">
-                <h5>MUHAMMAD RUHAN AFZAL</h5>
-                <span>SPECIALIST LEGAL & COPORATE AFFAIRS</span>
-                <p>Advocate High Court</p>
-              </div>
-              <div className="social">
-                <a href="">
-                  <i className="fa fa-twitter"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-facebook"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-instagram"></i>
-                </a>
-                <a href="">
-                  <i className="fa fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
+          {/* =======end row1==== */}
+       
+          {/* ====2nd row=== */}
+          <div class="row">
+          <div className="col-lg-1"></div>
+     <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+        <div class="member">
+          <div class="member-img">
+            <img src="src\assets\Images\femaleteam.jpg" class="img-fluid" alt=""/>
+           </div>
+          <div class="member-info">
+            <h5>MEHVISH MASOUD</h5>
+            <span>MANAGER AUDIT & ASSURANCE</span>
+            <p>CA(finalist), Bsc</p>
           </div>
-          {/* ======== */}
-
-          {/* =======end container==== */}
+          <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
         </div>
+      </div>
+        {/* ======== */}
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+        <div class="member">
+          <div class="member-img">
+            <img src="src\assets\Images\teamuser.jpg" class="img-fluid" alt=""/>
+          </div>
+          <div class="member-info">
+            <h5>MUHAMMAD RUHAN AFZAL</h5>
+            <span>SPECIALIST LEGAL & COPORATE AFFAIRS</span>
+            <p>Advocate High Court</p>
+          </div>
+          <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+      {/* ======== */}
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+        <div class="member">
+          <div class="member-img">
+            <img src="src\assets\Images\teamuser.jpg" class="img-fluid" alt=""/>
+          </div>
+          <div class="member-info">
+            <h5>MUHAMMAD RUHAN AFZAL</h5>
+            <span>SPECIALIST LEGAL & COPORATE AFFAIRS</span>
+            <p>Advocate High Court</p>
+          </div>
+          <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+      </div>  
+          {/* ====end container== */}
       </div>
     </section>
   );

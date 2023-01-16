@@ -3,8 +3,8 @@ export default function News() {
   return (
     <>
       <div className="container-fluid news" id="updates-section">
-        <h2>News And Updates</h2>
-        <hr></hr>
+        {/* <h2>News And Updates</h2>
+        <hr></hr> */}
         <div className="row-flex">
           {/* <div className="date">
                        <h3>09</h3>

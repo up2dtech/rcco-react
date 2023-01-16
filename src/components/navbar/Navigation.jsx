@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+
 
 
 import "./Navigation.css";
-import image from "../../assets/Images/full-logo.png";
+import logoImage from "../../assets/Images/logo.png";
 export default function Navigation() {
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
@@ -15,14 +17,20 @@ export default function Navigation() {
 
   return (
     <>
-      <div className="d-flex ">
-        <nav className="navbar sticky-top  d-flex justify-content-between  navbar-expand-lg col-lg-11 h-50 ">
+      <div className="d-flex  navigation">
+        <nav className="navbar sticky-top nav-light d-flex justify-content-between  navbar-expand-lg col-lg-11 h-45 ">
           {/* <!-- ===logo== --> */}
           <div className="">
             <a className="navbar-brand" href="#">
-              <img className="navimg" src={image} />
+              <img className="navimg" src={logoImage} />
             </a>
           </div>
+              {/* ===logo text=== */}
+              <div className="textsec">
+          <span className="logotext">Riaz Chishti & Co</span>
+          <p className="logop">Audit - Accounts - Tax</p>
+          </div>
+
           {/* <!-- ===navbar=== --> */}
           <div className="">
             <button
@@ -47,30 +55,13 @@ export default function Navigation() {
                 <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}
-                    onClick={() => handleClickScroll("home-section")}
+                    onClick={() => handleClickScroll("testimonials")}
                     className="mr-2 nav-link"
                   >
                     Home
                   </a>
                 </li>
-                <li className="navbar-item active">
-                  <a
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleClickScroll("calculate-tax-section")}
-                    className="mr-2 nav-link"
-                  >
-                    Calculate Tax
-                  </a>
-                </li>
-                <li className="navbar-item active">
-                  <a
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleClickScroll("updates-section")}
-                    className="mr-2 nav-link"
-                  >
-                    Updates
-                  </a>
-                </li>
+
                 <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}
@@ -91,29 +82,51 @@ export default function Navigation() {
                 </li>
                 <li className="navbar-item active">
                   <a
-                    className="nav-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleClickScroll("team-section")}
+                    className="nav-link "
+                  >
+                    Team
+                  </a>
+                </li>
+
+                <li className="navbar-item active">
+                  <a
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleClickScroll("calculate-tax-section")}
+                    className="mr-2 nav-link"
+                  >
+                    Calculate Tax
+                  </a>
+                </li>
+                {/* <li className="navbar-item active">
+                  <a
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleClickScroll("updates-section")}
+                    className="mr-2 nav-link"
+                  >
+                    Updates
+                  </a>
+                </li>
+              */}
+             
+                <li className="navbar-item active">
+                  <a
+                    className="nav-link mr-5"
                     style={{ cursor: "pointer" }}
                     onClick={() => handleClickScroll("advisory-section")}
                   >
                     Advisory
                   </a>
                 </li>
-                <li className="navbar-item active">
-                  <a
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleClickScroll("team-section")}
-                    className="nav-link mr-5"
-                  >
-                    Team
-                  </a>
-                </li>
+               
                 <li className="navbar-item active">
                   <a
                     href="https://linkedin.com/company/riazchishtiandco"
                     className="nav-link mr-0"
                     target="_blank"
                   >
-                    <i className="fa fa-linkedin"></i>
+                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
                 </li>
                 <li className="navbar-item active">
@@ -122,7 +135,7 @@ export default function Navigation() {
                     className="nav-link mr-1"
                     target="_blank"
                   >
-                    <i className="fa fa-facebook"></i>
+                   <FontAwesomeIcon icon={faFacebookF} className="fa-1x" />
                   </a>
                 </li>
               </ul>

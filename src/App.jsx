@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import News from "./components/news/News";
 import ContactBar from "./components/navbar/ContactBar";
 import Navigation from "./components/navbar/Navigation";
+import Crousal from "./components/crousal/Crousal";
 function App() {
   return (
     <>
@@ -14,12 +15,14 @@ function App() {
       <ContactBar/>  
       <Navigation/> 
       </div>
-      <TaxCalculator/>
+      <Crousal/>
       <News/>
-      <AboutUs/>
+      <AboutUs/> 
+      <TaxCalculator/>    
       <ServiceGrid />
       <Advisoryarea />
       <Team/>
+     
       <Footer/>
 
     </>

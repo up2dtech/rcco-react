@@ -1,0 +1,65 @@
+#testimonials{   
+    text-align:left;
+    /* background-color: #64b7f6; */
+    color:white;
+    margin: 0%;
+    height: 400px;
+    width: 100%;
+    background-image: url("../../assets/Images/introbg1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 2%;
+  }
+  .intro{
+    /* background-color: rgba(240, 248, 255, 0.47); 
+     outline: 1px solid ; */
+    border-radius: 1%;
+    width: 40%;
+    font-size: 22px;
+    color:aliceblue;
+    padding: 5%;
+    font-weight: 600;
+    margin-top: 4%;
+    margin-left: 5%;
+
+  }
+  .testimonial-image{
+   width: 10%;
+    border-radius: 100%;
+    margin:20px;
+  }
+  .carousel-item{
+    padding:7% 15%;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    
+    #testimonials{   
+        text-align:left;
+        /* background-color: #64b7f6; */
+        color:white;
+        margin: 0%;
+        height: 350px;
+        width: 100%;
+        background-image: url("../../assets/Images/introbg1.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        padding-top: 2%;
+      }
+    
+    .intro{
+        /* background-color: rgba(240, 248, 255, 0.47); 
+         outline: 1px solid ; */
+        border-radius: 1%;
+        width: 40%;
+        font-size: 14px;
+        color:aliceblue;
+        padding: 5%;
+        font-weight: 500;
+        margin-top: 4%;
+        margin-left: 5%;
+    
+      }
+
+   }

@@ -1,3 +1,4 @@
+
 .team {
   background: #fff;
   padding-bottom: 30px;
@@ -5,16 +6,10 @@
 }
 
 .team .member {
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
-/* .tcol{
-  padding-right: 15px;
-  padding-left: 15px;
-}
-   */
 .team .member .member-img {
   position: relative;
   overflow: hidden;
@@ -25,7 +20,7 @@
   left: 0;
   bottom: -40px;
   right: 0;
-  height: 30px;
+  height: 40px;
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
@@ -47,40 +42,38 @@
 }
 
 .team .member .social i {
-  font-size: 16px;
-  margin: 0 1px;
+  font-size: 18px;
+  margin: 0 2px;
 }
 
 .team .member .member-info h5 {
-  font-weight: 550;
-  margin: 15px 0px 5px 0;
-  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0 5px 0;
+  font-size: 18px;
   color: #1065c0;
-  text-align: center;
 }
 
 .team .member .member-info span {
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #64b7f6;
-  text-align: center;
+  color: #68A4C4;
 }
 
 .team .member .member-info p {
-  font-size: 12px;
-  line-height: 13px;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 20px;
   font-family: "Roboto", sans-serif;
   color: #0747a1;
-  text-align: center;
 }
 
 .team .member:hover .social {
   bottom: 0;
   opacity: 1;
-  transition: bottom ease-in-out 0.1s;
+  transition: bottom ease-in-out 0.4s;
 }
 
 .team .member:hover .social a,

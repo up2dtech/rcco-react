@@ -13,8 +13,12 @@ export default function Footer() {
             <div className="row">
               {/* ----About---- */}
               <div className="col-lg-3 col-md-6 col-sm-6 footer-info ">
-                <h3>Riaz Chishti & Co</h3>
-                <p>
+
+              <div className="textsec">
+               <span className="logotext">Riaz Chishti & Co</span>
+                {/* <p className="logop">Audit - Accounts - Tax</p> */}
+                </div>
+                <p className="infop ">
                   <i className="fa fa-clock"></i> &nbsp; 9:00 am - 5:00 pm
                 </p>
                 <div className="social-links mt-3">
