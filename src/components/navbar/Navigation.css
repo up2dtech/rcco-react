@@ -102,8 +102,16 @@
   }
   .textsec{
       padding-top: 10px;
-      margin-left: 0px;
-      visibility:hidden;
+      margin-left:90px;
+      /* visibility:hidden; */
+      position: absolute;
+  }
+  .logotext{
+    color: #1a8ae5;
+    font-weight:bold;
+    font-size: medium;
+    text-shadow: 3pt cyan;
+    text-transform: uppercase;
   }
   .navigation{
     height: 72px;
