@@ -11,8 +11,6 @@
     padding-top: 2%;
   }
   .intro{
-    /* background-color: rgba(240, 248, 255, 0.47); 
-     outline: 1px solid ; */
     border-radius: 1%;
     width: 40%;
     font-size: 22px;
@@ -23,37 +21,57 @@
     margin-left: 5%;
 
   }
-  .testimonial-image{
-   width: 10%;
-    border-radius: 100%;
-    margin:20px;
-  }
-  .carousel-item{
-    padding:7% 15%;
+
+  @media (min-width:768px) and (max-width: 991px){
+    #testimonials{   
+      text-align:left;
+      /* background-color: #64b7f6; */
+      color:white;
+      margin: 0%;
+      height: 400px;
+      width: 100%;
+      background-image: url("../../assets/Images/introbg1.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      padding-top: 2%;
+    }
+    .intro{
+      border-radius: 1%;
+      width: 60%;
+      font-size: 20px;
+      color:aliceblue;
+      padding: 3%;
+      /* font-weight: 600; */
+      margin-top: 4%;
+      margin-left: 5%;
+  
+    }
+
+
   }
 
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     
     #testimonials{   
         text-align:left;
-        /* background-color: #64b7f6; */
         color:white;
         margin: 0%;
         height: 350px;
         width: 100%;
-        background-image: url("../../assets/Images/introbg1.jpg");
-        background-size:contain;
-        background-repeat: no-repeat;
+        background-image: url("../../assets/Images/introbgSm.jpg");
+        background-size:auto;
         padding-top: 2%;
+        background-position:center;
+        overflow-wrap: break-word;
+        overflow: hidden;
       }
     
     .intro{
-        /* background-color: rgba(240, 248, 255, 0.47); 
-         outline: 1px solid ; */
+      
         border-radius: 1%;
-        width: 40%;
-        font-size: 14px;
+        width: 60%;
+        font-size: 16px;
         color:aliceblue;
         padding: 5%;
         font-weight: 500;

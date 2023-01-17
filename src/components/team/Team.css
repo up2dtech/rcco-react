@@ -4,6 +4,11 @@
   padding-bottom: 30px;
   font-family: "Roboto", sans-serif;
 }
+.tcol{
+  padding:4%;
+  align-content: center;
+  align-items: center;
+}
 
 .team .member {
   margin-bottom: 20px;

@@ -115,8 +115,8 @@ export default function Team() {
           {/* ====2nd row=== */}
           <div class="row">
           
-     <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
-        <div class="member">
+     <div class="col-lg-4 col-md-6 col-sm-10 d-flex tcoll">
+        <div class="member  align-items-center">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg4}  alt="Mehwish"/>
            </div>
@@ -142,7 +142,7 @@ export default function Team() {
         </div>
       </div>
         {/* ======== */}
-      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-6 col-sm-10 d-flex align-items-center tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg5}  alt="Ruhan"/>
@@ -169,7 +169,7 @@ export default function Team() {
         </div>
       </div>
       {/* ======== */}
-      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-6 col-sm-10 d-flex align-items-center tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg6}  alt="Abbas"/>

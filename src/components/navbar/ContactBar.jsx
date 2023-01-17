@@ -7,7 +7,7 @@ export default function ContactBar() {
       <div className="d-flex" id="contactbar">
         <div className="d-flex text-align-centre">
         <FontAwesomeIcon icon={faLocationDot} className="fa-1x"/>&nbsp;&nbsp;
-          <p>68-A, Ali Block, New Garden Town, Lahore, Pakistan </p>
+          <p> 68-A, Ali Block, New Garden Town, Lahore, Pakistan </p>
           <div className="Vcontact"></div>
           <FontAwesomeIcon icon={faPhone} /> &nbsp;<p>042 38938695</p>
           <div className="Vcontact"></div>

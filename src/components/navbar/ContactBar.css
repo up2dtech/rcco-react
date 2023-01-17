@@ -8,6 +8,10 @@
   padding-bottom: 1%;
   font-family: "Roboto", sans-serif !important;
   font-size: 14px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  
+ 
 }
 .Vcontact {
   border-left: 1px solid white;
@@ -23,18 +27,19 @@
   margin-left: 32%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width:0px) and (max-width: 768px) {
   #contactbar {
     height: 60px;
     outline: 1px;
     background-color: #0747a1af;
     color: whitesmoke !important;
-    padding-left: 4%;
     padding-top: 2%;
     padding-bottom: 1%;
     font-family: "Roboto", sans-serif !important;
-    font-size: 12px;
-    line-height: 1;
-    text-overflow: hidden;
+    font-size: 9px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    
   }
+  
 }

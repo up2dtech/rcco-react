@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
-
-
 import "./Navigation.css";
 import logoImage from "../../assets/Images/logo.png";
+import { useState } from "react";
+
 export default function Navigation() {
+  const [toggle, setToggle] = useState(true);
   const handleClickScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,40 +18,41 @@ export default function Navigation() {
   return (
     <>
       <div className="d-flex  navigation">
-        <nav className="navbar sticky-top nav-light d-flex justify-content-between  navbar-expand-lg col-lg-11 h-45 ">
+        <nav className="navbar navbar-fixed justify-content-between  navbar-expand-lg col-lg-11 col-sm-12 ">
           {/* <!-- ===logo== --> */}
-          <div className="">
+          <div className="col-sm-2 flex-grid">
             <a className="navbar-brand" href="#">
               <img className="navimg" src={logoImage} />
             </a>
           </div>
-              {/* ===logo text=== */}
-              <div className="textsec">
-          <span className="logotext">Riaz Chishti & Co</span>
-          <p className="logop">Audit - Accounts - Tax</p>
+          {/* ===logo text=== */}
+          <div className="textsec">
+            <span className="logotext">Riaz Chishti & Co</span>
+            <p className="logop">Audit - Accounts - Tax</p>
           </div>
 
           {/* <!-- ===navbar=== --> */}
-          <div className="">
+          <div className=" toggle ">
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              // data-bs-toggle="collapse"
+              // data-bs-target="#navbarSupportedContent"
+              // aria-controls="navbarSupportedContent"
+              // aria-expanded="false"
+              // aria-label="Toggle navigation"
+              onClick={() => setToggle(!toggle)}
             >
               <span className="navbar-toggler-icon">
-                <FontAwesomeIcon icon={faBars}/>
+                <FontAwesomeIcon icon={faBars} />
               </span>
             </button>
             {/* <!-- ===links=== --> */}
             <div
-              className="collapse navbar-collapse"
+              className={toggle && "collapse navbar-collapse"}
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ml-auto">
+              <ul className="navbar-nav ml-auto navbar-navsm">
                 <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}
@@ -109,7 +110,7 @@ export default function Navigation() {
                   </a>
                 </li>
               */}
-             
+
                 <li className="navbar-item active">
                   <a
                     className="nav-link mr-2"
@@ -119,14 +120,14 @@ export default function Navigation() {
                     Advisory
                   </a>
                 </li>
-               
+
                 <li className="navbar-item active">
                   <a
                     href="https://linkedin.com/company/riazchishtiandco"
                     className="nav-link mr-0"
                     target="_blank"
                   >
-                     <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
                 </li>
                 <li className="navbar-item active">
@@ -135,7 +136,7 @@ export default function Navigation() {
                     className="nav-link mr-1"
                     target="_blank"
                   >
-                   <FontAwesomeIcon icon={faFacebookF} className="fa-1x" />
+                    <FontAwesomeIcon icon={faFacebookF} className="fa-1x" />
                   </a>
                 </li>
               </ul>

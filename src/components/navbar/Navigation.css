@@ -7,17 +7,15 @@
 .navimg {
     height: 75px;
     width: 75px;  
-    margin-left:70px;
-    margin-right: 0px;
-  
-  
-    
+    margin-left:40px;
+    margin-right: 0px;    
 }
+
 .textsec{
   padding-top: 10px;
-  margin-left: -280px;
+  margin-left:150px;
   text-align: left;
- 
+  position:absolute;
 }
 .logotext{
   color: #1a8ae5;
@@ -33,10 +31,8 @@
   font-kerning: 2pt;
 }
 
-.navbar-toggler-icon {
-  /* color:black; */
+.navbar-toggler-icon { 
   background-color: #64b7f6;
-  outline: 1px solid #1a8ae5;
   color: aliceblue;
 }
 .navbar-nav > ul {
@@ -60,16 +56,43 @@
   padding-left: 15px;
   transition: all 0.52s ease;
 }
-@media only screen and (max-width: 600px) {
-  .navigation{
-      height: auto;
-      /* background-color: #64b7f6; */
-  }
+
+.navbar-toggler{
+    border-color: none;
+    margin-left: none;
+
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+  
   .navimg {
-      height: 80px;
-      width: 80px;
-      margin-top:0px;
-      margin-left:10px;
+    height: 75px;
+    width: 75px;
+    margin-top:-15px;
+    margin-left:20px;
+  
+}
+.textsec{
+    padding-top: 10px;
+    margin-left: 120px;
+    position:absolute;
+}
+.navbar-navsm{
+  background-color:aliceblue;
+  text-align: center;
+  display: list-item;
+  width: 150px;
+}
+
+}
+
+@media (min-width:0px) and (max-width: 767px) {
+  .navimg {
+      height: 75px;
+      width: 75px;
+      margin-top:-18px;
+      margin-left:0px;
+      position: sticky;
     
   }
   .textsec{
@@ -77,6 +100,22 @@
       margin-left: 0px;
       visibility:hidden;
   }
-  
- 
+  .navigation{
+    height: 72px;
+  }
+  .navbar-navsm{
+    background-color:aliceblue;
+    text-align: center;
+    display: list-item;
+    width: 150px;
+  }
+  .navbar-toggler-icon { 
+    background-color: #64b7f6;
+    color: aliceblue;
+  }
+  .toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
  }
