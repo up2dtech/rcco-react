@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faFacebookF, faFacebookSquare, faInstagram, faInstagramSquare, faLinkedin, faLinkedinIn, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import "./Navigation.css";
 import logoImage from "../../assets/Images/logo.png";
 import { useState } from "react";
@@ -18,7 +18,7 @@ export default function Navigation() {
   return (
     <>
       <div className="d-flex  navigation">
-        <nav className="navbar navbar-fixed justify-content-between  navbar-expand-lg col-lg-11 col-sm-12 ">
+        <nav className="navbar navbar-fixed justify-content-between  navbar-expand-lg col-lg-11 col-sm-12  ">
           {/* <!-- ===logo== --> */}
           <div className="col-sm-2 flex-grid">
             <a className="navbar-brand" href="#">
@@ -95,11 +95,22 @@ export default function Navigation() {
                   <a
                     style={{ cursor: "pointer" }}
                     onClick={() => handleClickScroll("calculate-tax-section")}
-                    className="mr-2 nav-link"
+                    className="mr-1 nav-link"
                   >
                     Calculate Tax
                   </a>
                 </li>
+
+                <li className="navbar-item active">
+                  <a
+                    className="nav-link mr-4"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleClickScroll("advisory-section")}
+                  >
+                    Advisory
+                  </a>
+                </li>
+
                 {/* <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}
@@ -113,30 +124,29 @@ export default function Navigation() {
 
                 <li className="navbar-item active">
                   <a
-                    className="nav-link mr-2"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleClickScroll("advisory-section")}
-                  >
-                    Advisory
-                  </a>
-                </li>
-
-                <li className="navbar-item active">
-                  <a
                     href="https://linkedin.com/company/riazchishtiandco"
                     className="nav-link mr-0"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FontAwesomeIcon icon={faLinkedin} />
                   </a>
                 </li>
                 <li className="navbar-item active">
                   <a
                     href="https://www.facebook.com/riazchishtiandco"
+                    className="nav-link mr-1 "
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                  </a>
+                </li>
+                <li className="navbar-item active">
+                  <a
+                    href="https://www.instagram.com/riazchishtiandco/?igshid=YmMyMTA2M2Y%3D"
                     className="nav-link mr-1"
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faFacebookF} className="fa-1x" />
+                      <FontAwesomeIcon icon={faInstagramSquare}  />
                   </a>
                 </li>
               </ul>

@@ -1,24 +1,18 @@
 import "./Advisory.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faBus, faBusinessTime, faGraduationCap, faHandHoldingHeart, faHeartPulse, faHotel, faIndustry, faLaptop, faPeopleGroup, faPersonDigging, faSeedling, faUserTie, faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { faBoltLightning, faBriefcase, faBus, faBusinessTime, faGraduationCap, faHandHoldingHeart, faHeartPulse, faHotel, faIndustry, faLaptop, faPeopleGroup, faPersonDigging, faPowerOff, faSeedling, faUserTie, faUtensils } from "@fortawesome/free-solid-svg-icons";
 
 function Advisoryarea() {
   return (
     <div className="col-lg-12  mt-5" id="advisory-section">
-      <h1 className="adh1">Advisory Areas</h1>
-      <hr />
+      <h1 className="adh1">Business Sectors</h1>
+      {/* <hr /> */}
 
       <div className="row">
         <div className="col-lg-1"></div>
         {/* ===list1=== */}
         <div className="col-lg-5 col-sm-10 list">
           <ul className="fa-ul">
-            <li>
-              <span className="fa-li">
-                <FontAwesomeIcon icon={faBusinessTime} />
-              </span>
-              <a href="">Business Sectors</a>
-            </li>
             <li>
               <span className="fa-li">
                 <FontAwesomeIcon icon={faSeedling} />
@@ -55,6 +49,12 @@ function Advisoryarea() {
               </span>
               <a href="">Hospitality and Tourism</a>
             </li>
+            <li>
+              <span className="fa-li">
+              <FontAwesomeIcon icon={faPeopleGroup} />
+              </span>
+              <a href="">Private Clients and Family Offices</a>
+            </li>
           </ul>
         </div>
         {/* ====column 2=== */}
@@ -69,9 +69,9 @@ function Advisoryarea() {
             </li>
             <li>
               <span className="fa-li">
-                <FontAwesomeIcon icon={faPeopleGroup} />
+                <FontAwesomeIcon icon={faBoltLightning} />
               </span>
-              <a href="">Private Clients and Family Offices</a>
+              <a href="">Power Generation Units</a>
             </li>
             <li>
               <span className="fa-li">

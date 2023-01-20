@@ -23,12 +23,18 @@
   font-size: larger;
   text-shadow: 3pt cyan;
   text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
 }
 .logop{
   color:#64b7f6;
-  font-size: small;
+  font-size:17px;
   text-align: center;
   font-kerning: 2pt;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navsocial{
+  font-size: medium;
 }
 
 .navbar-toggler-icon { 
@@ -112,6 +118,7 @@
     font-size: medium;
     text-shadow: 3pt cyan;
     text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
   }
   .navigation{
     height: 72px;
@@ -130,5 +137,12 @@
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+  .logop{
+    color:#64b7f6;
+    font-size:15px;
+    text-align: center;
+    font-kerning: 2pt;
+    font-family: 'Times New Roman', Times, serif;
   }
  }

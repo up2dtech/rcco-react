@@ -11,8 +11,7 @@ export default function Crousal()
  <div className="intro">
      <p>
         <em>A firm of Chartered Accountants & Corporate Lawyers providing
-         professional services to clients such as Audits, Accounts, Tax,
-          Corporate & Legal Advisory. </em>
+         professional services to clients.</em>
           </p>
  </div>
   

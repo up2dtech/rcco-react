@@ -2,7 +2,7 @@ h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #1065c0;
-  padding: 2%;
+  padding: 3%;
 }
 
 hr {
@@ -16,30 +16,37 @@ hr {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #0747a1;
-  height: 230px;
+  height: 580;
   border: #0747a1;
-  padding: 0%;
-  font-size: 18px;
-  font-weight: 600;
+  padding: 1%;
+  font-size: 16px;
+  font-weight: 550;
+  background-color: aliceblue;
+  margin-top: 2%;
+  border-radius: 2%;
+  outline:1px solid #1065c0;
+  box-shadow: 5px 10px 18px #888888;
+
 }
 p {
   font-family: "Roboto", sans-serif;
   /* font-weight: 600; */
 }
 
-.acc {
-  padding-right: 0px;
-  padding-left: 10px;
-}
-.audit {
-  padding-right: 10px;
-  padding-left: 0px;
-}
+
 .service > img {
-  height: 158px;
-  width: 158px;
+  height: 550px;
+  width: 550px;
 }
-.service > img:hover {
-  height: 180px;
-  width: 180px;
+/* .service > img:hover {
+  height: 200px;
+  width: 200px;
+} */
+@media (min-width:0px) and (max-width: 767px){
+ 
+  .service > img {
+    height: 400px;
+    width: 400px;
+  }
+
 }
