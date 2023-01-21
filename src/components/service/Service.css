@@ -45,8 +45,8 @@ p {
 @media (min-width:0px) and (max-width: 767px){
  
   .service > img {
-    height: 400px;
-    width: 400px;
+    height: 380px;
+    width: 340px;
   }
 
 }

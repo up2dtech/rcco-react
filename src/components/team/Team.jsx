@@ -172,7 +172,7 @@ export default function Team() {
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
-          <img className="img-fluid" src={TeamImg6}  alt="Abbas"/>
+          <img className="img-fluid" src={TeamImg4}  alt="Abbas"/>
           </div>
           <div class="member-info">
             <h5>Rabia Riaz</h5>

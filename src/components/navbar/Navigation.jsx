@@ -18,9 +18,9 @@ export default function Navigation() {
   return (
     <>
       <div className="d-flex  navigation">
-        <nav className="navbar navbar-fixed justify-content-between  navbar-expand-lg col-lg-11 col-sm-12  ">
+        <nav className="navbar navbar-fixed justify-content-between  navbar-expand-lg col-lg-11 col-sm-12 ">
           {/* <!-- ===logo== --> */}
-          <div className="col-sm-2 flex-grid">
+          <div className="col-sm-1 flex-grid">
             <a className="navbar-brand" href="#">
               <img className="navimg" src={logoImage} />
             </a>
@@ -36,11 +36,11 @@ export default function Navigation() {
             <button
               className="navbar-toggler"
               type="button"
-              // data-bs-toggle="collapse"
-              // data-bs-target="#navbarSupportedContent"
-              // aria-controls="navbarSupportedContent"
-              // aria-expanded="false"
-              // aria-label="Toggle navigation"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
               onClick={() => setToggle(!toggle)}
             >
               <span className="navbar-toggler-icon">
@@ -49,10 +49,10 @@ export default function Navigation() {
             </button>
             {/* <!-- ===links=== --> */}
             <div
-              className={toggle && "collapse navbar-collapse"}
+              className={toggle && "collapse navbar-collapse "}
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ml-auto navbar-navsm">
+              <ul className="navbar-nav ml-auto navbar-navsm navleft">
                 <li className="navbar-item active">
                   <a
                     style={{ cursor: "pointer" }}

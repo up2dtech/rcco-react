@@ -102,13 +102,13 @@
       height: 75px;
       width: 75px;
       margin-top:-16px;
-      margin-left:0px;
-      position: sticky;
+      margin-left:-20px;
+      position:relative;
     
   }
   .textsec{
       padding-top: 10px;
-      margin-left:90px;
+      margin-left:70px;
       /* visibility:hidden; */
       position: absolute;
   }
@@ -145,4 +145,13 @@
     font-kerning: 2pt;
     font-family: 'Times New Roman', Times, serif;
   }
+  .navleft{
+    position:absolute;
+    left:0;
+    top:30;
+    right:0;
+
+   
+  }
+  
  }
