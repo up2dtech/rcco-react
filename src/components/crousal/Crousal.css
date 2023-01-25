@@ -30,7 +30,7 @@
       margin: 0%;
       height: 400px;
       width: 100%;
-      background-image: url("../../assets/Images/introbg1.jpg");
+      background-image: url("../../assets/Images/web\ banner-06.png");
       background-size:cover;
       background-repeat: no-repeat;
       padding-top: 2%;
@@ -59,8 +59,8 @@
         margin: 0%;
         height: 350px;
         width: 100%;
-        background-image: url("../../assets/Images/web\ banner-04.png");
-        background-size:auto;
+        background-image: url("../../assets/Images/web\ banner-09.png");
+        background-size:cover;
         padding-top: 2%;
         background-position:center;
         overflow-wrap: break-word;
