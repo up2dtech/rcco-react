@@ -115,7 +115,7 @@ export default function Team() {
           {/* ====2nd row=== */}
           <div class="row">
           
-     <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+     <div class="col-lg-4 col-md-6 col-sm-12 tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg4}  alt="Mehwish"/>

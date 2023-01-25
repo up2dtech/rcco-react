@@ -9,10 +9,10 @@ export default function Crousal()
 <section id="testimonials">
  {/* <!-- Crouselcode --> */}
  <div className="intro">
-     <p>
+     {/* <p>
         <em>A firm of Chartered Accountants & Corporate Lawyers providing
          professional services to clients.</em>
-          </p>
+          </p> */}
  </div>
   
 

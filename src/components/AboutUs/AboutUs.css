@@ -58,6 +58,10 @@
   font-size: 14px;
   color: #1065c0;
 }
+.Aboutlink{
+  left: 0;
+  padding-left: 1rem;
+}
 
 .why-us .video-box {
   position: relative;
@@ -141,4 +145,12 @@
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
+}
+@media (min-width:0px) and (max-width: 768px){
+
+.Aboutlink{
+  left: 0;
+  padding-left: 1rem;
+}
+
 }

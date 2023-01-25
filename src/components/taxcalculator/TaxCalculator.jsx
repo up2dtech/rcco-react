@@ -4,14 +4,14 @@ import "./TaxCalculator.css";
 
 // Select component options
 const options = [
-  { label: "Monthly", value: "monthly" },
-  { label: "Annual", value: "anual" },
+  { label: "Salary", value: "monthly" },
+  { label: "Business", value: "anual" },
   { label: "Rental", value: "rental" },
 ];
 
 export default function TaxCalculator() {
   const [state, setState] = useState({
-    taxType: { label: "Monthly", value: "monthly" },
+    taxType: { label: "Salary", value: "monthly" },
     anualIncome: 0,
     anualTax: 0,
   });

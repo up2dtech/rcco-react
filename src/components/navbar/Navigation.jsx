@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faFacebookF, faFacebookSquare, faInstagram, faInstagramSquare, faLinkedin, faLinkedinIn, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faFacebookF, faFacebookSquare, faInstagram, faInstagramSquare, faLinkedin, faLinkedinIn, faSquareFacebook, faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
 import "./Navigation.css";
 import logoImage from "../../assets/Images/logo.png";
 import { useState } from "react";
@@ -107,7 +107,7 @@ export default function Navigation() {
                     style={{ cursor: "pointer" }}
                     onClick={() => handleClickScroll("advisory-section")}
                   >
-                    Advisory
+                    Business Sectors
                   </a>
                 </li>
 
@@ -147,6 +147,15 @@ export default function Navigation() {
                     target="_blank"
                   >
                       <FontAwesomeIcon icon={faInstagramSquare}  />
+                  </a>
+                </li>
+                <li className="navbar-item active">
+                  <a
+                    href="https://wa.me/message/TBP3TYA3OKL4E1 "
+                    className="nav-link mr-1"
+                    target="_blank"
+                  >
+                      <FontAwesomeIcon icon={faWhatsappSquare}  />
                   </a>
                 </li>
               </ul>

@@ -57,25 +57,25 @@ export default function AboutUs() {
                 </h4>
                 <p className="description" data-toggle="collapse">
                   Our philosophy can be described as our commitment to: 
-                  <ul>
+                  <ul className="Aboutlink">
                     <li>
                     Provide the highest standard of services & to support specialized
-                      needs of our clients
+                      needs of our clients.
                     </li>
                     <li>
                     Follow the international and local laws
-                            as applicable to the profession
+                            as applicable to the profession.
                       </li>
                       <li>
                       Enhance skills of our staff
-                        and partners through specialized courses
+                        and partners through specialized courses.
                       </li>
                       <li>
                       Provide continuing professional education to our staff, 
-                      encourage personal growth and expand professional horizon of the entire team
+                      encourage personal growth and expand professional horizon of the entire team.
                       </li>
                       <li>
-                      Utilise our resources in the most efficient manner to benefit our clients and ourselves
+                      Utilise our resources in the most efficient manner to benefit our clients and ourselves.
                       </li>
                     </ul>  
                 </p>

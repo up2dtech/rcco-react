@@ -1,4 +1,4 @@
-import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faChevronRight, faClock, faEnvelope, faLocationDot, faMobileAndroid, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Footer.css";
@@ -25,9 +25,7 @@ export default function Footer() {
                   <FontAwesomeIcon icon={faClock} /> &nbsp; 9:00 am - 5:00 pm
                 </p>
                 <div className="social-links mt-3">
-                  {/* <a href="#" className="twitter" title="twitter">
-                    <i className="fa fa-twitter"></i>
-                  </a> */}
+                 
                   <a
                     href="https://www.facebook.com/riazchishtiandco"
                     className="facebook"
@@ -45,6 +43,13 @@ export default function Footer() {
                   >
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
+                  <a
+                    href="https://wa.me/message/TBP3TYA3OKL4E1"
+                    className="facebook"
+                    target="_blank"
+                  >
+                   <FontAwesomeIcon icon={faWhatsapp} />
+                  </a>
                 </div>
               </div>
 
@@ -52,7 +57,7 @@ export default function Footer() {
               <div className="col-lg-2 col-md-5 col-sm-6 footer-links ">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a
                       href="https://fbr.gov.pk/"
@@ -63,7 +68,7 @@ export default function Footer() {
                       FBR
                     </a>
                   </li>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a
                       href="https://www.secp.gov.pk/"
@@ -74,7 +79,7 @@ export default function Footer() {
                       SECP
                     </a>
                   </li>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
                     <a
                       href="https://e.pra.punjab.gov.pk/"
@@ -85,7 +90,7 @@ export default function Footer() {
                       PRA
                     </a>
                   </li>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://srb.gos.pk/"
@@ -96,7 +101,7 @@ export default function Footer() {
                       SRB
                     </a>
                   </li>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://bra.gob.pk/"
@@ -107,7 +112,7 @@ export default function Footer() {
                       BRA
                     </a>
                   </li>
-                  <li>
+                  <li className='link'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp; {" "}
                     <a
                       href="https://kpra.gov.pk/"
@@ -123,31 +128,33 @@ export default function Footer() {
               {/* ---service--- */}
               <div className="col-lg-4 col-md-5 col-sm-6 footer-links ">
                 <h4>Our Services</h4>
-                <ul>
-                  <li>
+                <ul >
+                <li className='links'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
-                    <a href="#">Accounts & Book Keeping</a>
+                    <a href="#service-section">Audit & Assurance</a>
                   </li>
-                  <li>
+                  <li className='links'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
-                    <a href="#">Tax Advisory</a>
+                    <a href="#service-section">Accounting & Book Keeping</a>
                   </li>
-                  <li>
+                  <li className='links'>
+                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
+                    <a href="#service-section">Tax  Corporate Compliance Advisory</a>
+                  </li>
+                  <li className='links'>
                   <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
-                    <a href="#">Business Planning Outsourcing</a>
+                    <a href="#service-section">Business Planning, Investment & Start up Advisory</a>
                   </li>
-                  <li>
+                  <li className='links'>
+                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
+                    <a href="#service-section">Business Planning Outsourcing</a>
+                  </li>
+                  {/* <li>
                   <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
                     <a href="#">Corporate Advisory</a>
                   </li>
-                  <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="icon"  /> &nbsp;{" "}
-                    <a href="#">Business Planning & Investment Advisory</a>
-                  </li>
-                  <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="icon" /> &nbsp;{" "}
-                    <a href="#">Audit & Assurance</a>
-                  </li>
+                   */}
+                  
                 </ul>
               </div>
 
