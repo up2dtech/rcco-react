@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fe39fce.css",
-    "main.js": "/static/js/main.d9182f0a.js",
+    "main.css": "/static/css/main.980672e7.css",
+    "main.js": "/static/js/main.1556f15b.js",
     "static/js/787.87154be3.chunk.js": "/static/js/787.87154be3.chunk.js",
     "static/media/About.mp4": "/static/media/About.5e57e11e196c72216b6f.mp4",
+    "static/media/web banner-06.png": "/static/media/web banner-06.eca27dda80a71332515b.png",
+    "static/media/web banner-04.png": "/static/media/web banner-04.6570ebb95fab41b9fa01.png",
     "static/media/introbg1.jpg": "/static/media/introbg1.ccf1244caf01db389932.jpg",
-    "static/media/introbgSm.jpg": "/static/media/introbgSm.a1fc46a71369e7775e56.jpg",
     "static/media/bob.png": "/static/media/bob.c13e90a69913be7508b2.png",
     "static/media/Businessplan.png": "/static/media/Businessplan.486376695a4e29815035.png",
     "static/media/Audit.png": "/static/media/Audit.b2538ac481c2d03a4b3b.png",
@@ -24,12 +25,12 @@
     "static/media/corporate.jpg": "/static/media/corporate.ddf141339f2b4ebadeb9.jpg",
     "static/media/bg-advisory.jpg": "/static/media/bg-advisory.4b90f8f6d44d96263997.jpg",
     "index.html": "/index.html",
-    "main.9fe39fce.css.map": "/static/css/main.9fe39fce.css.map",
-    "main.d9182f0a.js.map": "/static/js/main.d9182f0a.js.map",
+    "main.980672e7.css.map": "/static/css/main.980672e7.css.map",
+    "main.1556f15b.js.map": "/static/js/main.1556f15b.js.map",
     "787.87154be3.chunk.js.map": "/static/js/787.87154be3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fe39fce.css",
-    "static/js/main.d9182f0a.js"
+    "static/css/main.980672e7.css",
+    "static/js/main.1556f15b.js"
   ]
 }
