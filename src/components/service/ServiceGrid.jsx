@@ -16,7 +16,7 @@ export default function ServiceGrid() {
         <div className="container">
           <div className="  d-flex row">
            <div className="col-lg-1"></div>
-          <div className="service col-lg-2 col-sm-12 col-md-12">
+          <div className="service col-lg-2 col-sm-12 ">
               <Service
                 src={auditImage}
                 alt="Audit"
@@ -24,21 +24,21 @@ export default function ServiceGrid() {
               />
             </div>
 
-            <div className="service col-lg-2 col-sm-12 col-md-12 ">
+            <div className="service col-lg-2 col-sm-12 ">
               <Service
                 src={accountsImage}
                 alt="accounts"
                 description={`Accountancy & \n Book Keeping`}
               />
             </div>
-            <div className="service col-lg-2 col-sm-12 col-md-12">
+            <div className="service col-lg-2 col-sm-12 ">
               <Service
                 src={taxImage}
                 alt="Tax"
                 description="Tax & Corporate Compliance Advisory"
               />
             </div>
-            <div className="service col-lg-2 col-sm-12 col-md-12 ">
+            <div className="service col-lg-2 col-sm-12 ">
               <Service
                 src={planImage}
                 alt="BPlanning"
@@ -46,7 +46,7 @@ export default function ServiceGrid() {
               />
             </div>
 
-            <div className="service col-lg-2 col-sm-12 col-md 12 ">
+            <div className="service col-lg-2 col-sm-12 ">
               <Service
                 src={bpoImage}
                 alt="BPO"

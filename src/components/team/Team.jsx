@@ -25,7 +25,7 @@ export default function Team() {
         <div className="row">    
              
           {/* ======== */}
-          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">    
                 <img className="img-fluid" src={TeamImg1}  alt="Riaz"/>
@@ -52,7 +52,7 @@ export default function Team() {
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
               <img className="img-fluid" src={TeamImg2}  alt="Umer"/>
@@ -79,7 +79,7 @@ export default function Team() {
             </div>
           </div>
           {/* ======== */}
-          <div className="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+          <div className="col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch tcol">
             <div className="member">
               <div className="member-img">
               <img className="img-fluid" src={TeamImg3}  alt="Asif"/>
@@ -115,7 +115,7 @@ export default function Team() {
           {/* ====2nd row=== */}
           <div class="row">
           
-     <div class="col-lg-4 col-md-6 col-sm-12 tcol">
+     <div class="col-lg-4 col-md-4 col-sm-12 tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg4}  alt="Mehwish"/>
@@ -142,7 +142,7 @@ export default function Team() {
         </div>
       </div>
         {/* ======== */}
-      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg5}  alt="Ruhan"/>
@@ -169,7 +169,7 @@ export default function Team() {
         </div>
       </div>
       {/* ======== */}
-      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch tcol">
+      <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-stretch tcol">
         <div class="member">
           <div class="member-img">
           <img className="img-fluid" src={TeamImg4}  alt="Abbas"/>
