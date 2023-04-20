@@ -3,7 +3,6 @@ import "./Service.css";
 import accountsImage from "../../assets/Images/Accounts.png";
 import taxImage from "../../assets/Images/Tax.png";
 import bpoImage from "../../assets/Images/BusinessProcess.png";
-import corporateImage from "../../assets/Images/corporate.jpg";
 import planImage from "../../assets/Images/Businessplan.png";
 import auditImage from "../../assets/Images/Audit.png";
 

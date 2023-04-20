@@ -10,6 +10,7 @@ const options = [
 ];
 
 export default function TaxCalculator() {
+  const [inputCalc, setInputCalcu] = useState("");
   const [state, setState] = useState({
     taxType: { label: "Salary", value: "monthly" },
     anualIncome: 0,
@@ -24,7 +25,7 @@ export default function TaxCalculator() {
 
   // All tax calculation takes place in this function
   const taxCalculation = () => {
-    if (state.taxType.value === "monthly" || state.taxType.value === "anual") {
+    if (state.taxType.value === "monthly") {
       if (state.anualIncome <= 600000) {
         setState({ ...state, anualTax: 0 });
       } else if (state.anualIncome > 600000 && state.anualIncome <= 1200000) {
@@ -58,7 +59,9 @@ export default function TaxCalculator() {
           anualTax: parseInt(2955000 + (state.anualIncome - 12000000) * 0.35),
         });
       }
-    } else if (state.taxType.value === "rental") {
+    }
+    // business slab
+    else if (state.taxType.value === "anual") {
       if (state.anualIncome < 600000) {
         setState({ ...state, anualTax: 0 });
       } else if (state.anualIncome > 600000 && state.anualIncome <= 800000) {
@@ -98,6 +101,27 @@ export default function TaxCalculator() {
         });
       }
     }
+    // rental slab
+    else if (state.taxType.value === "rental") {
+      if (state.anualIncome <= 300000) {
+        setState({ ...state, anualTax: 0 });
+      } else if (state.anualIncome > 300000 && state.anualIncome <= 600000) {
+        setState({
+          ...state,
+          anualTax: parseInt((state.anualIncome - 300000) * 0.05),
+        });
+      } else if (state.anualIncome > 600000 && state.anualIncome <= 2000000) {
+        setState({
+          ...state,
+          anualTax: parseInt(15000 + (state.anualIncome - 600000) * 0.1),
+        });
+      } else if (state.anualIncome > 2000000) {
+        setState({
+          ...state,
+          anualTax: parseInt(155000 + (state.anualIncome - 2000000) * 0.25),
+        });
+      }
+    }
   };
 
   return (
@@ -114,6 +138,7 @@ export default function TaxCalculator() {
               size="lg"
               options={options}
               onChange={(event) => {
+                setInputCalcu("");
                 if (
                   (event.value === "anual" || event.value === "rental") &&
                   state.taxType.value === "monthly" &&
@@ -122,7 +147,7 @@ export default function TaxCalculator() {
                   setState({
                     ...state,
                     taxType: event,
-                    anualIncome: state.anualIncome / 12,
+                    anualIncome: 0,
                     anualTax: 0,
                   });
                   return;
@@ -135,7 +160,7 @@ export default function TaxCalculator() {
                   setState({
                     ...state,
                     taxType: event,
-                    anualIncome: state.anualIncome * 12,
+                    anualIncome: 0,
                     anualTax: 0,
                   });
                   return;
@@ -150,13 +175,15 @@ export default function TaxCalculator() {
               className="input"
               type="number"
               size="lg"
+              value={inputCalc}
               placeholder="Enter Income"
               onChange={(event) => {
                 const value = parseInt(event.target.value.replace(/\D/g, ""));
+                setInputCalcu(value);
                 if (state.taxType.value === "monthly") {
                   setState({
                     ...state,
-                    anualIncome: value * 12,
+                    anualIncome: value,
                     anualTax: 0,
                   });
                 } else {

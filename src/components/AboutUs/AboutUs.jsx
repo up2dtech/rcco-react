@@ -1,9 +1,8 @@
 import "./AboutUs.css";
 import video from "../../assets/Images/About.mp4";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLightbulb, faStar } from '@fortawesome/free-solid-svg-icons'
 import value from "../../assets/Images/value.png";
 import vision from "../../assets/Images/vision.png";
+import React from 'react';
 
 export default function AboutUs() {
   return (
@@ -23,15 +22,15 @@ export default function AboutUs() {
           {/* <hr></hr> */}
           <div className="row">
             <div className="col-lg-6 video-box venobox">
-              <iframe
+               <video
                 src={video}
                 height="350px"
-                width="500px"
+                width="550px"
                 controls
                 className="venobox mt-5 col-sm-12"
                 data-vbtype="video"
                 data-autoplay="false"
-              ></iframe>
+              ></video>
             </div>
 
             <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
