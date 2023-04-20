@@ -4,7 +4,6 @@ import Team from "./components/team/Team.jsx";
 import TaxCalculator from "./components/taxcalculator/TaxCalculator.jsx";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Footer from "./components/footer/Footer";
-import News from "./components/news/News";
 import ContactBar from "./components/navbar/ContactBar";
 import Navigation from "./components/navbar/Navigation";
 import Crousal from "./components/crousal/Crousal";
@@ -16,7 +15,6 @@ function App() {
       <Navigation/> 
       </div>
       <Crousal/>
-      <News/>
       <AboutUs/> 
       <TaxCalculator/>    
       <ServiceGrid />

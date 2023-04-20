@@ -175,7 +175,7 @@ export default function Team() {
           <img className="img-fluid" src={TeamImg4}  alt="Abbas"/>
           </div>
           <div class="member-info">
-            <h5>Rabia Riaz</h5>
+            <h5>RABIA RIAZ</h5>
             <span>HR & IT SPECIALIST</span>
             <p>Experienced HR Manager from the Aviation Industry</p>
           </div>
