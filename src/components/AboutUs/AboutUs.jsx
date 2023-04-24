@@ -18,13 +18,14 @@ export default function AboutUs() {
         date-aos-delay="200"
       >
         <div className="container">
+          <br/>
           <h1>About Us</h1>
           {/* <hr></hr> */}
           <div className="row">
             <div className="col-lg-6 video-box venobox">
                <video
                 src={video}
-                height="350px"
+                height=""
                 width="550px"
                 controls
                 className="venobox mt-5 col-sm-12"
