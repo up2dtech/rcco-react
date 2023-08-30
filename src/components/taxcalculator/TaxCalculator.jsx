@@ -24,6 +24,8 @@ export default function TaxCalculator() {
   }, [state]);
 
   // All tax calculation takes place in this function
+
+  // Salary slab
   const taxCalculation = () => {
     if (state.taxType.value === "monthly") {
       if (state.anualIncome <= 600000) {
@@ -41,17 +43,17 @@ export default function TaxCalculator() {
       } else if (state.anualIncome > 2400000 && state.anualIncome <= 3600000) {
         setState({
           ...state,
-          anualTax: parseInt(165000 + (state.anualIncome - 2400000) * 0.2),
+          anualTax: parseInt(165000 + (state.anualIncome - 2400000) * 0.225),
         });
       } else if (state.anualIncome > 3600000 && state.anualIncome <= 6000000) {
         setState({
           ...state,
-          anualTax: parseInt(405000 + (state.anualIncome - 3600000) * 0.25),
+          anualTax: parseInt(435000 + (state.anualIncome - 3600000) * 0.275),
         });
       } else if (state.anualIncome > 6000000 && state.anualIncome <= 12000000) {
         setState({
           ...state,
-          anualTax: parseInt(1005000 + (state.anualIncome - 6000000) * 0.325),
+          anualTax: parseInt(1095000 + (state.anualIncome - 6000000) * 0.35),
         });
       } else if (state.anualIncome > 12000000) {
         setState({
