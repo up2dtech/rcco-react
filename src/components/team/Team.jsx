@@ -55,7 +55,7 @@ export default function Team() {
           </div> */}
 
          <Col md={4} lg={4}>
-           <Card style={{ width: '100%', height:'550px'  }}>
+           <Card className="card">
             <Card.Img variant="top" src={TeamImg1}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">RIAZ AHMED CHISHTI</Card.Title>
@@ -68,7 +68,7 @@ export default function Team() {
            </Col>
           {/* ======== */}
           <Col md={4} lg={4}>
-           <Card style={{ width: '100%', height:'550px' }}>
+           <Card >
             <Card.Img variant="top" src={TeamImg2}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">MUHAMMAD UMER RIAZ</Card.Title>
@@ -81,7 +81,7 @@ export default function Team() {
            </Col>
           {/* ======== */}
           <Col md={4} lg={4}>
-           <Card style={{ width: '100%', height:'550px' }}>
+           <Card >
             <Card.Img variant="top" src={TeamImg3}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">DR. ASIF CHISHTI</Card.Title>
@@ -101,7 +101,7 @@ export default function Team() {
           <div class="row mt-3">
           
           <Col md={4} lg={4}>
-           <Card style={{ width: '100%' , height:'550px' }}>
+           <Card >
             <Card.Img variant="top" src={TeamImg4}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">MEHVISH MASOUD</Card.Title>
@@ -114,7 +114,7 @@ export default function Team() {
            </Col>
         {/* ======== */}
         <Col md={4} lg={4}>
-           <Card style={{ width: '100%' , height:'550px' }}>
+           <Card >
             <Card.Img variant="top" src={TeamImg5}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">MUHAMMAD RUHAN AFZAL</Card.Title>
@@ -127,7 +127,7 @@ export default function Team() {
            </Col>
       {/* ======== */}
       <Col md={4} lg={4}>
-           <Card style={{ width: '100%' , height:'550px' }}>
+           <Card >
             <Card.Img variant="top" src={TeamImg4}  alt="Riaz" height={400}/>
              <Card.Body>
              <Card.Title className="title">RABIA RIAZ</Card.Title>
