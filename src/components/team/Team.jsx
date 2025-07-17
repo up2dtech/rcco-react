@@ -80,27 +80,8 @@ export default function Team() {
              </Card>
            </Col>
           {/* ======== */}
-          <Col md={4} lg={4}>
-           <Card >
-            <Card.Img variant="top" src={TeamImg3}  alt="Riaz" height={400}/>
-             <Card.Body>
-             <Card.Title className="title">DR. ASIF CHISHTI</Card.Title>
-               <Card.Text className="teaminfo">
-                <span className="tspan">DIRECTOR FINANCIAL ADVISORY</span><br/>
-                MD, Master in Management & Leadership (Harvard University),
-                  Master in Policy & Development (London School of Economics)
-              </Card.Text>       
-             </Card.Body>
-             </Card>
-           </Col>
-          {/* ======== */}
-          </div> 
-          {/* =======end row1==== */}
-       
-          {/* ====2nd row=== */}
-          <div class="row mt-3">
-          
-          <Col md={4} lg={4}>
+
+    <Col md={4} lg={4}>
            <Card >
             <Card.Img variant="top" src={TeamImg4}  alt="Riaz" height={400}/>
              <Card.Body>
@@ -112,6 +93,29 @@ export default function Team() {
              </Card.Body>
              </Card>
            </Col>
+
+          {/* <Col md={4} lg={4}>
+           <Card >
+            <Card.Img variant="top" src={TeamImg3}  alt="Riaz" height={400}/>
+             <Card.Body>
+             <Card.Title className="title">DR. ASIF CHISHTI</Card.Title>
+               <Card.Text className="teaminfo">
+                <span className="tspan">DIRECTOR FINANCIAL ADVISORY</span><br/>
+                MD, Master in Management & Leadership (Harvard University),
+                  Master in Policy & Development (London School of Economics)
+              </Card.Text>       
+             </Card.Body>
+             </Card>
+           </Col> */}
+
+          {/* ======== */}
+          </div> 
+          {/* =======end row1==== */}
+       
+          {/* ====2nd row=== */}
+          <div class="row mt-3">
+          
+      
         {/* ======== */}
         <Col md={4} lg={4}>
            <Card >
